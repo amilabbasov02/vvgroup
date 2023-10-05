@@ -15,4 +15,9 @@ $( document ).ready(function() {
             $("#about .container").removeClass("active")
         }
     })
+    $(".category-name").hover(function(){
+        let child = $(this).data('id');
+        $(".bg-images img").css("opacity","0")
+        $(`.bg-images img:nth-child(${child})`).css("opacity","1")
+    })
 });

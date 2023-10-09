@@ -1459,3 +1459,83 @@ footer{
     font-weight: 300;
     line-height: 107.5%;
 }
+.error-page .win-back{
+    top: 0;
+}
+.error-page .form_head{
+    color: var(--maingrey, #404041);
+    font-family: Poppins;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+.error-page .form_text{
+    color: var(--maingrey, #404041);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    max-width: 660px;
+}
+.error-page .back-btn{
+    color: var(--Gray-1, #333);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; /* 75% */
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    display: inline-block;
+}
+.error-text{
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.error-page .home-form-img {
+    bottom: 50px;
+}
+.phone-text svg{
+    margin-right: 22px;
+}
+.phone-text{
+    color: var(--maingrey, #404041);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 107.5%;
+    letter-spacing: 0.77px;
+    display: flex;
+    align-items: center;
+}
+#contact{
+    padding-top: 150px;
+}
+.phone{
+    margin-top: 52px;
+    display: flex;
+    flex-direction: column;
+}
+.phone-number{
+    color: var(--maingrey, #404041);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 107.5%;
+    letter-spacing: 0.7px;
+}

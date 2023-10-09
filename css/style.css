@@ -1504,10 +1504,10 @@ footer{
 .error-page .home-form-img {
     bottom: 50px;
 }
-.phone-text svg{
+.contact-text svg{
     margin-right: 22px;
 }
-.phone-text{
+.contact-text{
     color: var(--maingrey, #404041);
     leading-trim: both;
     text-edge: cap;
@@ -1523,7 +1523,7 @@ footer{
 #contact{
     padding-top: 150px;
 }
-.phone{
+.contact-block{
     margin-top: 52px;
     display: flex;
     flex-direction: column;
@@ -1538,4 +1538,7 @@ footer{
     font-weight: 400;
     line-height: 107.5%;
     letter-spacing: 0.7px;
+}
+.contact-line{
+    margin: 10px 0;
 }

@@ -24,6 +24,13 @@ $( document ).ready(function() {
     $(".win-back").click(function(){
         window.history.back()
     })
+    $(".search form input").keyup(function(){
+        if($(".search form input").val() != "" ){
+            $(".search-result").addClass("active")
+        }else{
+            $(".search-result").removeClass("active")
+        }
+    })
     const spHeight = document.querySelectorAll('.support-text');
     let maxHeight = 0;
   

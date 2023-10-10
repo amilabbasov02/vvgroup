@@ -325,8 +325,10 @@ header{
     font-weight: 600;
     line-height: 100%;
     text-transform: uppercase;
+    position: relative;
 }
-.navbar li a::before {
+.navbar li a::before,
+.lang li a::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -338,7 +340,8 @@ header{
     transition: all 0.4s linear;
     top: 20px;
 }
-.navbar li a:hover::before, .navbar li .active::before {
+.navbar li a:hover::before, .navbar li .active::before,
+.lang li a:hover::before, .lang li .active::before {
     left: 23% !important;
     width: 56% !important;
 }
@@ -388,6 +391,43 @@ header{
     width: 100%;
     visibility: visible;
     z-index: 99;
+}
+.search-result{
+    position: absolute;
+    top: 40px;
+    z-index: 99;
+    max-width: 578px;
+    width: 100%;
+    right: 26px;
+    border-radius: 5px;
+    border: 1px solid #CCCBCB;
+    background: #FFF;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 20px 9px 20px 9px;
+    /* opacity: 0; */
+    height: 0;
+    visibility: hidden;
+    max-height: 250px;
+}
+.search-result.active{
+    /* opacity: 1; */
+    height: auto;
+    visibility: visible;
+}
+.result-item a{
+    color: var(--A1, #135E69);
+    text-align: center;
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; 
+    text-transform: uppercase;
+}
+.result-item{
+    margin-bottom: 20px;
 }
 .search-close{
     position: fixed;
@@ -449,8 +489,8 @@ header{
     margin-top: 100px;
     margin-bottom: 20px;
 }
-.home-about-btn,#home .social-icons{
-    background: #FFF;
+.home-about-btn,#home .social-icons,
+#contact .social-icons{
     color:  #333;
     font-family: roboto;
     font-size: 16px;
@@ -465,6 +505,11 @@ header{
     align-items: center;
     justify-content: center;
     gap: 20px;
+}
+#contact .social-icons{
+    margin-top: 50px;
+    justify-content: space-between;
+    width: 142px;
 }
 #home{
     background: #F8F8F8;
@@ -1542,4 +1587,7 @@ footer{
 }
 .contact-line{
     margin: 10px 0;
+}
+.nice-select .list{
+    width: 100%;
 }

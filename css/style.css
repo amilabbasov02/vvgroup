@@ -1504,7 +1504,7 @@ footer{
 .error-page .home-form-img {
     bottom: 50px;
 }
-.contact-text svg{
+.contact-text img{
     margin-right: 22px;
 }
 .contact-text{
@@ -1527,6 +1527,7 @@ footer{
     margin-top: 52px;
     display: flex;
     flex-direction: column;
+    max-width: 273px;
 }
 .phone-number{
     color: var(--maingrey, #404041);

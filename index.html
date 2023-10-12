@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/nice-select.css">
     <link rel="stylesheet" href="./css/pretty-checkbox.min.css">
+    <link rel="stylesheet" href="./css/responcive.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <title>Vvgroup</title>
 </head>
 
@@ -49,6 +51,17 @@
                         Əlaqə
                     </a>
                 </li>
+                <ul class="lang lang-mobile" style="display: none;">
+                    <li class="lang-item">
+                        <a href="#" class="active">az</a>
+                    </li>
+                    <li class="lang-item">
+                        <a href="#">ru</a>
+                    </li>
+                    <li class="lang-item">
+                        <a href="#">en</a>
+                    </li>
+                </ul>
             </ul>
             <div class="head-right">
                 <ul class="lang">
@@ -78,6 +91,11 @@
                             <a href="#"> Rəqəmsal marketing</a>
                         </li>
                     </ul>
+                </div>
+                <div class="menu" style="display: none;">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
                 <div class="search-close"></div>
             </div>
@@ -244,6 +262,24 @@
                     </a>
                 </div>
             </div>
+            <div class="owl-carousel start_cards-mobile owl-theme" style="display: none;">
+                <div class="start_card item">
+                    <div class="start_img">
+                        <img src="./img/akademy-icon.png" alt="">
+                    </div>
+                    <h3 class="start_head">
+                        Akademiya
+                    </h3>
+                    <p class="start_body">
+                        Sahibkarlıq prosesləri, dizayn, development və digər sahələrdə özünü inkişaf etdirmək
+                        istəyirsinizsə bizə qoşulun.
+                    </p>
+                    <a class="start_link" href="#">
+                        Daha ətraflı
+                        <img src="./img/start-card-arr.png" alt="">
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
     <section id="home-form">
@@ -256,7 +292,7 @@
                     İlk addım sadədir: Aşağıdakı sorğu blankını doldurun. <br>
                     Sizə tez bir zamanda geri dönüş edəcəyik!
                 </p>
-                <form class="home_form" action="javascript:void(0)">
+                <form class="home_form" onsubmit="formSubmit(event)" action="#">
                     <div class="form_item">
                         <label for="#">
                             Xidmət növü
@@ -314,54 +350,6 @@
             </div>
         </div>
     </section>
-    <section id="news">
-        <div class="container">
-            <h3 class="head-title">
-                Xəbərlər
-            </h3>
-            <div class="news-cards d-flex">
-                <div class="news-card">
-                    <a href="#">
-                        <div class="news-img">
-                            <img src="./img/news-img.png" alt="">
-                        </div>
-                        <h4 class="news_head">
-                            A Spanish athlete spent 500 days alone in a cave — for science
-                        </h4>
-                        <p class="news_text">
-                            April 17, 2023
-                        </p>
-                    </a>
-                </div>
-                <div class="news-card">
-                    <a href="#">
-                        <div class="news-img">
-                            <img src="./img/news-img.png" alt="">
-                        </div>
-                        <h4 class="news_head">
-                            A Spanish athlete spent 500 days alone in a cave — for science
-                        </h4>
-                        <p class="news_text">
-                            April 17, 2023
-                        </p>
-                    </a>
-                </div>
-                <div class="news-card">
-                    <a href="#">
-                        <div class="news-img">
-                            <img src="./img/news-img.png" alt="">
-                        </div>
-                        <h4 class="news_head">
-                            A Spanish athlete spent 500 days alone in a cave — for science
-                        </h4>
-                        <p class="news_text">
-                            April 17, 2023
-                        </p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
     <footer>
         <div class="container">
             <div class="footer-top">
@@ -369,6 +357,12 @@
                     <a href="./index.html">
                         <img src="./img/vv-logo.svg" alt="">
                     </a>
+                    <div class="foot-socials foot-socials-mobile" style="display: none;">
+                        <a href="#"><img src="./img/face-icon.svg" alt=""></a>
+                        <a href="#"><img src="./img/insta-icon.svg" alt=""></a>
+                        <a href="#"><img src="./img/linkedin-icon.svg" alt=""></a>
+                        <a href="#"><img src="./img/youtube-icon.svg" alt=""></a>
+                    </div>
                 </div>
                 <div class="foot-contact">
                     <h4 class="ftc_head">
@@ -386,7 +380,7 @@
                         </p>
                         <a href="mailTo:support@vvgroup.az">support@vvgroup.az</a>
                     </div>
-                    <div class="ftc-line">
+                    <div class="ftc-line ftc-social">
                         <p>
                             Bizimlə əlaqə:
                         </p>
@@ -447,7 +441,9 @@
 
     <script src="./js/jquery.min.js"></script>
     <script src="./js/jquery.nice-select.min.js"></script> 
+    <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/responce.js"></script>
 </body>
 
 </html>
